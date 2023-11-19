@@ -25,6 +25,6 @@ app.use('/users',usersRouter) ;
 
 app.use('/email',emailRouter) ;
 
-app.listen(PORT, () => console.log(`The server started in: ${PORT} ✨✨`));
+app.listen(PORT, () => console.log(`The server started in: 4000 ✨✨`));
 
 export { client }
