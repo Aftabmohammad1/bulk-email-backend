@@ -4,10 +4,10 @@ dotenv.config();
 const sendEmail =async (email,subject,text) =>{
     try {
         const transporter = nodemailer.createTransport({
-            host: process.env.HOST,
+            //host: process.env.HOST,
             service: process.env.SERVICE,
-            post: process.env.EMAIL_PORT,
-            secure: Boolean(process.env.SECURE),
+            //post: process.env.EMAIL_PORT,
+            //secure: Boolean(process.env.SECURE),
             auth:{
                 user:process.env.USER,
                 pass:process.env.PASS
@@ -32,6 +32,7 @@ const sendEmail =async (email,subject,text) =>{
         </div>
             `
         });
+        console.log (info);
         return info
     } catch (error) {
         return error
